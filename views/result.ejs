@@ -1,0 +1,14 @@
+<%- include("header") -%>
+<table style="color:#fff;border: #fff solid;">
+  <tr>
+  <th>College</th>
+  <th>Max-Rank</th></tr>
+  
+    <% for(var i=0;i< result.length;i++){ %>
+     <tr> <td><%= result[i] %></td> <td><%= Rank[i] %></td></tr>
+    <% } %>
+  
+</table>
+
+
+<%- include("footer") -%>

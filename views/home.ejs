@@ -1,0 +1,17 @@
+<%- include("header") -%>
+<h2 class="form-validation">Prediction</h2>
+
+<form action="/result" method="post"  class="form-container">
+  
+    <input type="number" name="input1" placeholder="Rank"  class="form-input" /> 
+    <select id="dropdown" name="dropdown" class="form-select">
+      <option value="GEN">General</option>
+      <option value="EWS">EWS</option>
+      <option value="OBC">OBC</option>
+      <option value="SC">SC</option>
+      <option value="ST">ST</option>
+</select>
+    <button class="form-button" type="submit"><span class="text">Predict</span></button>
+</form>
+
+<%- include("footer") -%>
